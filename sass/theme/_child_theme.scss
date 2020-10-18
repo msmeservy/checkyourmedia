@@ -1,0 +1,420 @@
+// Global Styles
+
+h1 {
+    font-size: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+p {
+  margin-bottom: 20px !important;
+}
+
+
+
+/* HEADERAREA
+----------------------------------*/
+.navbar {
+    position: fixed !important;
+    width: 100%;
+    z-index: 10;;
+}
+.navbar .container {
+    max-width: 1400px;
+}
+
+.headerarea {
+    padding: 30px 15px;
+    @media (max-width: $breakpoint-tablet-max) {
+        display: none;
+        
+      }
+}
+
+.custom-logo {
+    max-width: 200px;
+    // @media (min-width: $breakpoint-tablet-min) {
+    //     display: none;
+        
+    //   }
+}
+
+.nav-link {
+    color: rgba(255,255,255,.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 15px !important;
+}
+
+
+.bannerarea {
+    background: url(/wp-content/themes/understrap-child-master/images/nyt.jpg) no-repeat center center;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+   width: 100%;
+   text-align: center;
+   p {
+       color: #fff;
+       font-size: 80px;
+       line-height: 90px;
+       margin-top: 50px;
+       
+       
+       text-shadow: 1px 1px 3px #000;
+       span {
+           font-style: italic;
+           
+       }
+   }
+}
+
+  
+  p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+  }
+  
+  .word {
+    position: absolute;
+    width: 260px;
+    opacity: 0;
+    margin-left: 10px;
+  }
+  
+  .letter {
+    display: inline-block;
+    position: relative;
+    float: left;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+  }
+  
+  .letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+  .letter.behind {
+    transform: rotateX(-90deg);
+  }
+  
+  .letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .wisteria {
+    color: #8e44ad;
+  }
+  
+  .belize {
+    color:#49b3f7 ;
+  }
+  
+  .pomegranate {
+    color: #c0392b;
+  }
+  
+  .green {
+    color: #0ecc51;
+  }
+  
+  .midnight {
+    color: #2c3e50;
+  }
+
+  .text {
+      margin-left: -242px;
+  }
+
+  .do-dont {
+    margin: 50px 0 20px;
+    color: #000080 !important;
+  }
+
+  .entry-title {
+    font-size: 60px;
+    line-height: 70px;
+    margin: 50px 0 30px;
+    text-align: center;
+  }
+
+  .whatish2 {
+    font-size: 50px;
+    line-height:60px;
+    text-align: center;
+  }
+
+  .thirty {
+    font-size: 40px;
+    line-height:50px;
+    text-align: center;
+    margin: 30px 0;
+    color: #c0392b;
+  }
+
+  .rotate::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    font-size: 20px; 
+    content: "\f055";
+
+  }
+
+  .rotate.active::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    font-size: 20px; 
+    content: "\f056";
+  }
+
+  /* ACCORDION CSS
+  ------------------------------------*/
+
+  .accordion-toggle {
+    cursor: pointer;
+    margin-bottom: 25px;
+  }
+.accordion-content {display: none;}
+
+.rotate{
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    width: 18px;
+    float: left;
+    line-height: 36px;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+.rotate.active{
+    -ms-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+    animation-timing-function: linear;
+}
+
+
+.petition {
+  text-align:center;
+}
+
+.dk-speakout-petition-wrap {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+a#dk-speakout-readme-1,
+#dk-speakout-honorific-1,
+.dk-speakout-full.dk-speakout-message {
+  display: none !important;
+}
+
+.dk-speakout-petition-wrap {
+  box-shadow: 0px 0px 7px #efefef;
+  background-color: #fff;
+}
+
+.dk-speakout-petition-wrap h3 {
+  font-family: 'Lato';
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.dk-speakout-petition-wrap input[type=text], .dk-speakout-message, .dk-speakout-message-editable textarea, .dk-speakout-petition-wrap input[type=email],
+.dk-speakout-petition-wrap p {
+  font-family: 'Lato';
+}
+
+
+.dk-speakout-submit {
+  background: #49b3f7;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  transition: .5s ease;
+   &:hover {
+    background: #555;
+   }
+}
+
+.dk-speakout-progress-wrap,
+.dk-speakout-share {
+ background: #fff;
+ border: none;
+ 
+}
+
+a.dk-speakout-facebook {
+  background: #3a5794;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  transition: .5s ease;
+    &:hover {
+      opacity: .8;
+    }
+}
+a.dk-speakout-twitter {
+  background: #52a8e7;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  transition: .5s ease;
+    &:hover {
+      opacity: .8;
+    }
+}
+
+.dk-speakout-petition-wrap p {
+  padding: 0 5px;
+}
+
+.dk-speakout-share > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.petition {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.email {
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* FOOTER
+-----------------*/
+
+.footer-container {
+  background-color: #555;
+}
+
+.social .fab {
+  color: #fff;
+  transition: .5s;
+}
+
+.social a {
+  margin: 10px;
+}
+
+.social .fab.fa-twitter:hover {
+  color: #52a8e7;
+}
+.social .fab.fa-facebook-f:hover {
+  color: #3a5794;
+}
+
+.attrib {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.entry-content {
+  min-height: 150px;
+}
+
+.form-group, .wpcf7 .wpcf7-form p {
+  width: 100%;
+}
+
+.dk-speakout-signature-count {
+  display: none;
+}
+/* Responsive
+------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+  .banner-content p {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .text {
+      margin-left: -174px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .bannerarea {
+      width: 100%;
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-attachment: inherit;
+  }
+}
+
+@media only screen and (max-width: 979px) {
+  .banner-content {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+ 
+}
+
+@media only screen and (max-width: 767px) {
+  .home .bannerarea {
+    background: url(/wp-content/themes/understrap-child-master/images/nytt.jpg) no-repeat center center;
+    min-height: 100vh;
+  }
+  .entry-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .thirty,
+  .do-dont {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .whatis h3 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home .bannerarea {
+    background: url(/wp-content/themes/understrap-child-master/images/nytm.jpg) no-repeat center center;
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  a.dk-speakout-twitter,
+  a.dk-speakout-facebook {
+    max-width: 280px;
+    width: 100%;
+    margin: 5px 0;
+    display: block;
+    padding: 0 50px;
+  }
+}
